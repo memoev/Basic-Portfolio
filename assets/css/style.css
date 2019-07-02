@@ -3,35 +3,46 @@ html, body {
     padding: 0;
 }
 
-h1 {
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#upperContainer {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: bold;
     height: 75px;
     background-color: #ffffff;
     border-bottom: solid;
     border-color: #cccccc;
     margin: 0;
     padding: 0;
+    top: 0px;
+    position: fixed;
+    width: 100%;
 }
 
-div.parent {
-    display: flex;
-    position: relative;
-    margin: auto;
+#wrapper {
+    height: 75px;
+    margin: 0 auto;
     width: 960px;
     background: yellow;
 }
 
 #myName {
-    position: relative;
+    position: absolute;
     width: 220px;
     height: 75px;
     background: #4aaaa5;  
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
     font-size: large;
     color: #ffffff;
+    margin: 0 auto; 
 }
 
 #myNameContainer {
-    margin: 0;
+    text-align: center;
+    margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,9 +50,10 @@ div.parent {
 }
 
 #otherPages {
+    float: right;
     margin-left: auto;
     margin-right: 0;
-    vertical-align: middle;
+    text-align: center;
 }
 
 a {
@@ -55,25 +67,78 @@ a {
     background: purple;
     width: 75px;
     height: 75px;
-    text-align: center;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: small;
-}
-
-div.bodyparent {
-    position: relative;
-    margin: auto;
-    width: 960px;
-    background: green;
+    line-height: 75px;
 }
 
 #Contact {
     background: #000000;
 }
 
-div.nextToImage {
-
+div.bodyparent {
+    position: relative;
+    top: 90px;
+    width: 900px;
+    background: black;
+    padding: 30px;
+    height: 500px;
+    overflow: auto;
+    margin: 0 auto 0 auto;
 }
 
+#aboutMeContainer {
+    left: 30px;
+    position: absolute;
+    background: orange;
+    z-index: 2;
+    width: 900px;
+    border-bottom: solid;
+    border-color: #cccccc;
+    height: 65px;
+}
 
+h2 {
+    display: block;
+    color: #4aaaa5;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
 
+p {
+    color: #777777;
+}
+
+#nextToImage {
+    position: absolute;
+    top: 120px;
+}
+
+#myImage {
+    float: left;
+    width: 140px;
+    height: 140px;
+}
+
+#text {
+    float: left;
+}
+
+#copyrightContainer {
+    clear: both;
+    background: #666666;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    border-top: solid;
+    border-color: #4aaaa5;
+    overflow: auto;
+}
+
+#copyright {
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 75px;
+}
