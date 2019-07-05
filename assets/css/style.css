@@ -16,6 +16,8 @@ html, body {
     top: 0px;
     position: fixed;
     width: 100%;
+    z-index: 99;
+
 }
 
 #wrapper {
@@ -88,6 +90,7 @@ a {
     overflow: auto;
     margin: 0 auto 0 auto;
     margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 #aboutMeContainer {
@@ -173,7 +176,7 @@ input.submit {
 
 .imgtext .textContainer {
     position: absolute;
-    z-index: 999;
+    z-index: 98;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -201,6 +204,7 @@ input.submit {
     border-top: 8px solid;
     border-color: #4aaaa5;
     overflow: auto;
+    z-index: 99;
 }
 
 #copyright {
