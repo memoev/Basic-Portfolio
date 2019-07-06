@@ -5,6 +5,7 @@ html, body {
     background-image: url(../images/subtle_grunge/subtle_grunge_@2X.png);
 }
 
+/*navigation styling*/
 #upperContainer {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     height: 75px;
@@ -54,11 +55,13 @@ html, body {
     text-align: center;
 }
 
+/*Links styling*/
 a {
     text-decoration: none;
     color: #777777;
 }
 
+/*Separation line for links styling*/
 .littleLine {
     border-right: 1px solid;
     border-color: #cccccc;
@@ -82,6 +85,7 @@ a {
     padding-right: 0px;
 }
 
+/*Content styling*/
 #bodyparent {
     clear: both;
     width: 910px;
@@ -127,6 +131,7 @@ p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+/*Input form styling*/
 #form {
     position: relative;
     margin-top: 70px;
@@ -198,6 +203,7 @@ a.portImg:hover {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+/*Footer sticked to the bottom styling*/
 #copyrightContainer {
     clear: both;
     background: #666666;
